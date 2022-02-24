@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: #9500ff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #460d6e;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.301);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.overlay.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay.hide .modal {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.modal {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal .icon svg {
+  width: 150px;
+  color: #258325;
+  margin-bottom: 1rem;
+}
+
+.modal h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.modal p {
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
